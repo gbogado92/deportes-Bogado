@@ -1,0 +1,168 @@
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px 12px rgba(0,0,0,0.5);
+
+    &__header {
+        position: relative;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        small {
+            background-color: rgba(14, 3, 3, 0.5);
+            color: #fff;
+            padding: 8px;
+            position: absolute;
+            border-radius: 10px;
+            right: 1;
+        }
+
+        &--strong {
+            font-weight: bold;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+    }
+}
+
+.noticias {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__titulo {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+
+/* PAGINA SUSCRIBITE */
+
+.servicios {
+    height: 695px;
+    background: linear-gradient(180deg, #94BE1F 50%,#eee 50%);
+
+    &__items {
+        grid-column: 1/-1;
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &-item {
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            height: 350px;
+            padding: 20px 10px;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 0 25px 50px 12px rgba(0,0,0,0.5);
+            }
+        }
+
+        &-titulo {
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+    }
+
+    &__precios {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+
+        small {
+            font-size: .5em;
+            color: grey;
+        }
+    }
+
+    &__descripcion {
+        padding: 10px;
+        background-color: yellow;
+    }
+
+    &__descripcion2 {
+        padding-bottom : 10px;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        background-color: black;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 0 35px;
+        font-weight: bold;
+    }
+}
+
+.form {
+   text-align: center;
+   margin: 50px auto;
+   width: 400px; 
+   background-color: white;
+   padding: 40px;
+   border-radius: 10px;
+
+   ul li {
+    margin: 10px;
+}
+
+
+   &__titulo {
+    color: black;
+}
+}
+
+input, textarea {
+    padding: 5px;
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+.btn{
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #94BE1F;
+    width: auto;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 35px;
+    font-weight: bold;
+}
+
+
+
+
+

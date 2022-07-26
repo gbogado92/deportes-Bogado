@@ -1,0 +1,78 @@
+$color-principal: #94BE1F;
+
+.header-base {
+    width: 100%;
+    background-color: $color-principal;
+    padding: 30px 20px;
+}
+
+.header {
+    @extend .header-base;
+    left: 0;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+
+    &__contenido {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            display: flex;
+            align-items: center;
+        }
+
+        &--titulo {
+            color: white;
+        }
+
+        &--navbar {
+            display: flex;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/* PAGINA SUSCRIBITE */
+
+.headerS {
+    @extend .header-base;
+
+    &__suscribite {
+        justify-content: space-between;
+
+        h3 {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__subtitulos {
+        padding-top: 40px;
+        text-align: center;
+        color: white;
+        font-size: 1.8em;
+    }
+}
+
+/* PAGINA REGISTRATE */
+
+.headerR {
+    @extend .header-base;
+}
+
+
+
+
+
+
+
+
